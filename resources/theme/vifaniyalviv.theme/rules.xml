@@ -5,9 +5,11 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+    <!--
     <xsl:template match="//link[@data-rel='kinetic-stylesheet']">
         <link rel="kinetic-stylesheet" type="text/css"><xsl:attribute name="href"><xsl:value-of select="@href"/></xsl:attribute></link>
     </xsl:template>
+    -->
     <xsl:template match="//img[string-length(@alt)=0]">
         <xsl:copy>
             <xsl:apply-templates select="@*|node()"/>
