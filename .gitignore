@@ -19,3 +19,4 @@ include
 lib
 mailqueue
 buildout.cfg
+/src/*
