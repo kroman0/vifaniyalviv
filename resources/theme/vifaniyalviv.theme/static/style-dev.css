@@ -87,7 +87,9 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {list-style: none;}
 /*header*/
 #header {background-size:auto auto;	position:relative;}
 #logo {padding: 0%;float: left;min-height: 125px;}
+/*
 #logo img {width: auto; max-width: 100%;}
+*/
 #logo a {display:block; width:100%;}
 #portal-personaltools {font-size: 1.1em;}
 
