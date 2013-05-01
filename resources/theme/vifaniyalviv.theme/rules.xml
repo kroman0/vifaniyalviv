@@ -17,6 +17,33 @@
         </xsl:copy>
     </xsl:template>
 
+<xsl:template match="@name">
+  <xsl:attribute name="name">
+    <xsl:choose>
+      <xsl:when test=". = 'DC.creator'">
+        <xsl:text>dcterms.creator</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'DC.date.modified'">
+        <xsl:text>dcterms.modified</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'DC.date.created'">
+        <xsl:text>dcterms.created</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'DC.type'">
+        <xsl:text>dcterms.type</xsl:text>
+      </xsl:when>
+      <xsl:when test=". = 'DC.format'">
+        <xsl:text>dcterms.format</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="." />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:attribute>
+</xsl:template>
+    <drop css:content="meta[name='DC.distribution']" />
+    <drop css:content="meta[name='distribution']" />
+
 
     <!--Head-->
     <copy css:content="html" css:theme="html" attributes="lang dir" />
