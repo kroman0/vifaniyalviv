@@ -12,8 +12,15 @@
     -->
     <xsl:template match="//img[string-length(@alt)=0]">
         <xsl:copy>
-            <xsl:apply-templates select="@*|node()"/>
             <xsl:attribute name="alt">Image</xsl:attribute>
+            <xsl:apply-templates select="@*|node()"/>
+        </xsl:copy>
+    </xsl:template>
+
+    <xsl:template match="//*[@id='formfield-form-captcha']/div/script">
+        <xsl:copy>
+            <xsl:attribute name="class">nolabjs</xsl:attribute>
+            <xsl:apply-templates select="@*|node()"/>
         </xsl:copy>
     </xsl:template>
 
@@ -43,7 +50,6 @@
 </xsl:template>
     <drop css:content="meta[name='DC.distribution']" />
     <drop css:content="meta[name='distribution']" />
-
 
     <!--Head-->
     <copy css:content="html" css:theme="html" attributes="lang dir" />
