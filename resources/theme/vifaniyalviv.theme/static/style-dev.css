@@ -119,6 +119,11 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {list-style: none;}
 /* Site Actions */
 #portal-siteactions {font-size: 100%; text-align: left; display:inline;}
 
+/* Document Actions */
+#content .documentActions li {
+    display: inline;
+}
+
 /* Custom */
 .carousel-text {
     background-color: transparent;
