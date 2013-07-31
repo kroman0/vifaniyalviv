@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
-
 <head>
 
 	<!-- content -->
@@ -13,9 +12,7 @@
 	
 	<!-- styles -->
 	<link type="text/css" rel="stylesheet" href="static/style.css" />
-  <script type="text/javascript">
-jQuery(document).ready(function(){jQuery(document).ready(function(a){var b=document.location.href+"/search";jQuery("#searchbt a").attr({href:b})});jQuery("#searchbt a").prepOverlay({subtype:"ajax",filter:"#content>*"})});
-</script>
+    <script type="text/javascript">jQuery(function($){$("#searchbt a").prepOverlay({subtype:"ajax",filter:"#content>*"})});</script>
 </head> 
 <body>
 	<!-- Accessibility -->
@@ -46,7 +43,7 @@ jQuery(document).ready(function(){jQuery(document).ready(function(a){var b=docum
 			<div class="clear"> </div>
 			
 	<!-- Main Menu -->
-	        <div id="searchbt"><a>search</a></div>
+	        <div id="searchbt"><a href="/@@search">search</a></div>
 			<div id="nav">
 			<span id="seletor" onclick="void(0)">Sections</span>
 				<ul>
