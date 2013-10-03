@@ -218,7 +218,8 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {list-style: none;}
 #content .documentActions li#document-action-facebook a {background-color: #4863ae;}
 #content .documentActions li#document-action-twitter a:before {content: "T";}
 #content .documentActions li#document-action-twitter a {background-color: #46c0fb;}
-
+#content .documentActions li#document-action-rss a:before {content: "R";}
+#content .documentActions li#document-action-rss a {background-color: #ff7f25;}
 
 /* Custom */
 .carousel-text {
