@@ -57,10 +57,10 @@
     <drop css:content="head link[rel='apple-touch-icon']" />    
     <before css:content="head link" css:theme="head link[rel='stylesheet']" />    
     <replace css:content="head title" css:theme="head title" />    
-    <before css:content="head script" css:theme="head script" />
     <before css:theme-children="head" css:content="base" /> 
     <after css:theme-children="head" css:content="head meta" />
-    
+    <after css:theme-children="head" css:content="head script" />
+
     <!--Content-->
     <merge attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
