@@ -27,6 +27,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a98be', end
 #header {background: transparent url('header.png') top center no-repeat;
 background-image: none,url('header.svg');
 }
+body.portaltype-ploneboardforum #content .poweredBy {display: none;}
 /* 
 #header {background: transparent url(sun.gif) top center no-repeat;}
 #header {background: transparent url(dev.jpg) top center no-repeat;} +
@@ -71,7 +72,7 @@ border-color: #c8c8c9;
 #content {font-size: 90%;}
 p {line-height: 1.8em; margin: 0 0 1em 0;}
 h1, h2, h3 {margin: 0.5em 0 0.5em;}
-.hidden {display: none;} 
+.hidden {display: none;}
 .clear {clear: both;}
 .pb-ajax, .pb-image, 
 .overlay iframe {font-size: 1.3em;}
