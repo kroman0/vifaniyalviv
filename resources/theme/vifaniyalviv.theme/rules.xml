@@ -54,7 +54,8 @@
     <!--Head-->
     <copy css:content="html" css:theme="html" attributes="lang dir" />
     <drop css:content="head link[rel='shortcut icon']" />
-    <drop css:content="head link[rel='apple-touch-icon']" />    
+    <drop css:content="head link[rel='apple-touch-icon']" />
+    <drop css:content="head meta[name='viewport']" />
     <before css:content="head link" css:theme="head link[rel='stylesheet']" />    
     <replace css:content="head title" css:theme="head title" />    
     <before css:theme-children="head" css:content="base" /> 
